@@ -3,7 +3,7 @@
   "version": "dev",
   "slug": "ledfx",
   "description": "A network based LED effect controller with support for advanced real-time audio effects!",
-  "url": "https://github.com/hassio-addons/addon-ledfx",
+  "url": "https://github.com/TychoWerner/addon-ledfx",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
   "audio": true,
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
@@ -11,10 +11,12 @@
   "auth_api": true,
   "map": ["ssl"],
   "ports": {
-    "80/tcp": 5333
+    "80/tcp": 5333,
+    "8888/tcp": 5334
   },
   "ports_description": {
-    "80/tcp": "Web interface"
+    "80/tcp": "Web interface",
+    "8888/tcp": "API access"
   },
   "options": {
     "ssl": true,
