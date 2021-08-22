@@ -17,7 +17,7 @@ if ! bashio::fs.file_exists "/data/ledfx/config.yaml"; then
     {
             echo "dev_mode: false"
             echo "devices: []"
-            echo "host: 127.0.0.1"
+            echo "host: 0.0.0.0"
             echo "max_workers: 10"
             echo "port: 8888"
             echo "presets: {}"
